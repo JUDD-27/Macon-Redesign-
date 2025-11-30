@@ -1,0 +1,35 @@
+/* Css reset  */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+/* nav styles */
+.logo-img {
+    height: 150px;
+    width: auto;
+    display: block;
+}
+
+.custom-nav {
+    background-color:   #f1f3f4;
+    padding: 0 1rem;
+}
+
+.navbar-toggler {
+    background-color: #cd2026;
+    
+   
+}
+.navbar-toggler-icon {
+    filter: invert(1);
+   
+}
+
+.custom-nav .nav-link {
+  color: #112e51; 
+}
+
+.custom-nav .nav-link:hover {
+  color: #cd2026; 
+}

@@ -4,28 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
-    <title>Homepage | Macon County NC</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Services| Macon County NC</title>
 </head>
 <body>
     <header>
-        <i class="logo">MyLogo</i>
-        <nav>
-            <ul>
-                <li><a href="/goverment.html">Goverment</a></li>
-                <li><a href="/deparments.html">Deparments</a></li>
-                <li><a href="/services.html">Services</a></li>
-                <li><a href="/residents.html">Residesnts</a></li>
-                <li><a href="/visitors.html">Visitors</a></li>
-                <li><a href="/about.html">About</a></li>
-            </ul>
-        </nav> 
-   </header>
+        <nav class="navbar   navbar-expand-lg custom-nav">
+            <div class="container-fluid p-0 d-flex justified-content-between align-items-center">
+                <!-- Brand -->
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="./images/Maconcolor logo .svg" alt="Macon County seal" class="logo-img"/></a>
+
+                <!-- Toggler (hamburger) -->
+                <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Collapsible menu -->
+                <div class="collapse navbar-collapse justify-content-end text-end" id="mainNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="government.html">Government</a></li>
+                    <li class="nav-item"><a class="nav-link" href="departments.html">Departments</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="residents.html">Residents</a></li>
+                    <li class="nav-item"><a class="nav-link" href="visitors.html">Visitors</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+
+
+
+    </header>
    <main>
 
    </main>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+   <script 
+     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+   </script>
+
    <footer>
         <section class="county-info">
              <i id="logo-footer">second logo</i>
@@ -67,4 +92,5 @@
         </section>
    </footer>
 </body>
+
 </html>
