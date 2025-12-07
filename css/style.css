@@ -2,8 +2,8 @@
 :root {
   --primary: #112e51;      /* Navy */
   --secondary-light: #fefefe;
-  --seconsecondary-dark: #f1f3f4;
-  --secondary: #dce4ed;    /* Light gray-blue */
+  --secondary-dark: #d5e2ef;
+  --secondary: #e9eef3;    /* Light gray-blue */
   --accent: #cd2026;       /* Red */
   --gold: #c8a748;         /* Gold  */
 
@@ -90,8 +90,6 @@ body {
     padding: 2rem;
 }
 
-
-
 .icons {
   
     color: var(--primary);
@@ -126,6 +124,7 @@ body {
 }
 .card:hover {
     transform: translateY(-5px);
+    background-color:  #f9f9f9;
    
 }
 .card-img-top {
@@ -135,7 +134,7 @@ body {
 }
 
 .county-manager {
-    background-color: var(--secondary);
+    background-color: var(--secondary-dark);
    margin: 4rem 0 0 0;
     padding: 2rem;
     border-radius: 50px 50px 0 0;
@@ -162,7 +161,7 @@ body {
 .news-updates {
     
     margin: auto 0;
-    background-color: var(--seconsecondary-dark);
+    background-color: var(--secondary);
     border-radius: 0 0 50px 50px;
 }
 
@@ -259,11 +258,61 @@ footer h3 {
 }
 
 .gov-card {
+    background-color: var(--secondary-light);
     border: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
-.gov-card:hover {
-    transform: translateY(-5px);
-    border-bottom: 10px solid var(--accent);
+
+
+.card-body a {
+  
+    font-weight: 600;
+    color: var(--primary);
+    
 }
+.card-body a:hover {
+    color: var(--accent);
+    
+}
+
+.government-info{
+    background-color: var(--secondary);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+/* departments page header */
+.overlay.deparments {
+    background-image: url(/images/CountyAdministration.jpg);
+}
+
+
+
+/* services */
+.overlay.services {
+    background-image: url(/images/downtown.png);
+    background-position: bottom;
+}
+
+.aside-list a {
+    color: var(--primary)
+}
+
+.aside-list a:hover{
+    font-weight: bold;
+    color: var(--text-light)
+}
+
+/* residents*/ 
+.overlay.residents {
+    background-image: url(/images/Visitors.jpg);
+}
+
+.gov-card .card-img-top {
+  height: 180px;    
+  object-fit: cover;  
+  filter: brightness(90%);
+}
+
+
