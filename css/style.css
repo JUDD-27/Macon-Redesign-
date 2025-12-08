@@ -3,6 +3,7 @@
   --primary: #112e51;      /* Navy */
   --secondary-light: #fefefe;
   --secondary-dark: #d5e2ef;
+    --secondary-deep: #a5bbd4;
   --secondary: #e9eef3;    /* Light gray-blue */
   --accent: #cd2026;       /* Red */
   --gold: #c8a748;         /* Gold  */
@@ -125,6 +126,7 @@ body {
 .card:hover {
     transform: translateY(-5px);
     background-color:  #f9f9f9;
+    border-bottom: 5px solid var(--primary);
    
 }
 .card-img-top {
@@ -227,7 +229,7 @@ footer h3 {
 /*government page header */
 .page-header {
     position: relative;
-    height: 300px;
+    height: 400px;
     width: 100%;
     color: var(--text-light);
     overflow: hidden;
@@ -293,6 +295,7 @@ footer h3 {
 .overlay.services {
     background-image: url(/images/downtown.png);
     background-position: bottom;
+    filter: brightness(90%);
 }
 
 .aside-list a {
@@ -316,3 +319,57 @@ footer h3 {
 }
 
 
+/*visitors*/
+.overlay.visitors {
+    background-image: url(/images/waterfall.jpg);
+    background-position: center;
+ 
+}
+.info-visitors {
+    background-color: var(--secondary-dark);
+    max-width: 1200px;
+    margin:0 auto;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+/*about*/
+.overlay.about {
+    background-image: url(/images/forest.jpg);
+    background-position: center;
+ 
+}
+
+.about-content {
+    
+    max-width: 1200px;
+}   
+
+.about-section {
+      background-color: var(--secondary-deep);
+    border-radius: 10px;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+.about-section.gov {
+    background-color: var(--secondary-dark);
+}
+
+.about-section.meeting-section {
+    background-color: var(--secondary);
+}
+
+
+.meeting-section ul li a {
+    margin-bottom: 0.5rem;
+    color: #112e51;
+}
+.meeting-section ul li a:hover {
+    color: #cd2026;
+}
+
+.about-icon {
+opacity: 0.8;
+}
