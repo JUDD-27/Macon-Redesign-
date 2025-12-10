@@ -343,7 +343,7 @@ footer h3 {
 
 /*visitors*/
 .overlay.visitors {
-    background-image: url(/images/waterfall.jpg);
+    background-image: url(../images/waterfall.jpg);
     background-position: center;
  
 }
